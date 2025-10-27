@@ -61,7 +61,7 @@ resource "google_container_cluster" "gke" {
   name     = "gke-cluster-1"
   location = var.region
   deletion_protection = false
-  
+
   # Remove default node pool
   remove_default_node_pool = true
   initial_node_count       = 1
@@ -103,7 +103,7 @@ resource "google_container_node_pool" "nodes" {
   name       = "node-pool-1"
   location   = var.region
   cluster    = google_container_cluster.gke.name
-  node_count = 3
+  node_count = 1
 
   node_config {
     machine_type = "e2-medium"
