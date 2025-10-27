@@ -60,7 +60,8 @@ resource "google_compute_subnetwork" "subnet" {
 resource "google_container_cluster" "gke" {
   name     = "gke-cluster-1"
   location = var.region
-
+  deletion_protection = false
+  
   # Remove default node pool
   remove_default_node_pool = true
   initial_node_count       = 1
