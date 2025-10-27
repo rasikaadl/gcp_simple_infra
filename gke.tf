@@ -20,7 +20,10 @@ provider "google" {
 # -------------------------------
 # Variables (edit or use .tfvars)
 # -------------------------------
-variable "project_id" { type = string }
+variable "project_id" { 
+  type    = string
+  default = "driver-team"
+}
 
 variable "region" {
   type    = string
