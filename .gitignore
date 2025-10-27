@@ -1,6 +1,6 @@
-*.tfstate
-*.tfstate.*
 .terraform/
+*.tfstate
+.tfstate.
 .terraform.lock.hcl
 *.tfvars
 *.tfvars.json
@@ -9,10 +9,8 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-# local editor files
-*.swp
-*.swo
 *.bak
-# OS
+*.log
+*.swp
 Thumbs.db
 .DS_Store
