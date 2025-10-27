@@ -1,0 +1,18 @@
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# local editor files
+*.swp
+*.swo
+*.bak
+# OS
+Thumbs.db
+.DS_Store
